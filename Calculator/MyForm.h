@@ -646,7 +646,7 @@ namespace Calculator {
 				textBox3->Text = System::Convert::ToString(first + second);
 			else if (op == "-")
 				textBox3->Text = System::Convert::ToString(first - second);
-			else if (op == "*"||op1!="")
+			else if (op == "*"|| (op1 != ""&& first !=0))
 				textBox3->Text = System::Convert::ToString(first * second);
 			else if (op == "/")
 				textBox3->Text = System::Convert::ToString(first / second);
@@ -721,7 +721,7 @@ namespace Calculator {
 				textBox1->Text = System::Convert::ToString(first + second);
 			else if (op == "-")
 				textBox1->Text = System::Convert::ToString(first - second);
-			else if (op == "*"|| op1 != "")
+			else if (op == "*"|| (op1 != ""&& first !=0))
 				textBox1->Text = System::Convert::ToString(first * second);
 			else if (op == "/")
 				textBox1->Text = System::Convert::ToString(first / second);
